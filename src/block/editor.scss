@@ -1,0 +1,31 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+ .wp-block-cgb-block-ministry-events {
+  & .components-datetime {
+    position: absolute;
+    z-index: 30;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    // margin: 4em;
+    padding: 2em;
+    margin: -10em -26em;
+  }
+
+  & input, select, textarea {
+    font-size: 14px !important;
+    width: auto !important;
+  }
+
+  & .components-datetime__time-field {
+    &-day { display: none; }
+    &-month { display: none; }
+    &-year { display: none; }
+    &-minutes-input { max-width: 60px; }
+    &-hours-input { max-width: 60px; }
+  }
+}

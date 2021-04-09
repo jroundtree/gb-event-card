@@ -1,0 +1,39 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.wp-block-cgb-block-ministry-events {
+  display: flex;
+  flex-direction: column;
+
+  & .event-card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 1em;
+
+    &--information {
+      padding: 1em;
+      box-shadow: 2px 1px 6px $gray-transparent;
+      background-color: white;
+
+      & h3 {
+        font-weight: 500;
+      }
+
+      & a {
+        color: $pantone-172;
+
+        &:hover {
+          background-color: rgba(177, 227, 227, .7);
+        }
+      }
+
+      & address {
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
